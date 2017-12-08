@@ -5,7 +5,7 @@ describe('expandKeys', () => {
     let expected = {
       hello: {
         world: 1,
-        galaxy: 2,
+        galaxy: 2
       },
       three: {
         dots: {
