@@ -1,13 +1,15 @@
 export const setPathValue = (layer, path, value) => {
-  path = path.split('.')
+  let splitPath = path.split('.')
+  return splitPath
+    .reduce((layer, pathSection, i) => {
+      // if last section
+      if (i + 1 === splitPath.length) {
+        layer[pathSection] = value
+      }
 
-  for (let i = 0; i < path.length; i++) {
-    // if value and is last item
-    if (value != null && i + 1 === path.length) { layer[path[i]] = value }
-    layer = layer[path[i]] = layer[path[i]] || {}
-  }
-
-  return layer
+      layer = layer[pathSection] = layer[pathSection] || {}
+      return layer
+    }, layer)
 }
 
 // expands keys with .'s to nested objects
