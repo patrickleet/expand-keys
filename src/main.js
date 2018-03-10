@@ -10,21 +10,11 @@ export const setPathValue = (layer, path, value) => {
   return layer
 }
 
-export const filterKeysWithDots = (obj) => {
-  let keys = []
-
-  for (let key in obj) {
-    if (obj.hasOwnProperty(key) && key.indexOf('.') > -1) {
-      keys.push(key)
-    }
-  }
-  return keys
-}
-
 // expands keys with .'s to nested objects
 export const expandKeys = (obj) => {
-  return filterKeysWithDots(obj)
-    .reduce(function(obj, key) {
+  return Object.keys(obj)
+    .filter(key => key.indexOf('.') > -1)
+    .reduce(function (obj, key) {
       var keyValue = obj[key]
       setPathValue(obj, key, keyValue)
       delete obj[key]

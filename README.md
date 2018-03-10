@@ -1,4 +1,7 @@
 # expand-keys
+[![Build Status](https://travis-ci.org/patrickleet/expand-keys.svg?branch=master)](https://travis-ci.org/patrickleet/expand-keys)
+[![codecov](https://codecov.io/gh/patrickleet/expand-keys/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickleet/expand-keys)
+[![Greenkeeper badge](https://badges.greenkeeper.io/patrickleet/expand-keys.svg)](https://greenkeeper.io/)
 
 ```
 describe('expandKeys', () => {
