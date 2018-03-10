@@ -24,7 +24,7 @@ export const filterKeysWithDots = (obj) => {
 // expands keys with .'s to nested objects
 export const expandKeys = (obj) => {
   return filterKeysWithDots(obj)
-    .reduce(function(obj, key) {
+    .reduce(function (obj, key) {
       var keyValue = obj[key]
       setPathValue(obj, key, keyValue)
       delete obj[key]
