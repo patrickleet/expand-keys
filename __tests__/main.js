@@ -1,6 +1,4 @@
 import { expandKeys } from 'main'
-import util from 'util'
-import { EventEmitter } from 'events'
 
 describe('expandKeys', () => {
   it('expands keys', () => {
