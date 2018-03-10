@@ -1,5 +1,7 @@
 # expand-keys
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/patrickleet/expand-keys.svg)](https://greenkeeper.io/)
+
 ```
 describe('expandKeys', () => {
   it('expands keys', () => {
