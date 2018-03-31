@@ -1,7 +1,7 @@
 {
   "name": "expand-keys",
   "version": "0.0.0-development",
-  "description": "an api to receive and ingest product exports",
+  "description": "expands object's keys with dots (like.this) to nested objects { like: this: {} }",
   "scripts": {
     "commit": "git-cz",
     "build": "babel src -d dist",
@@ -22,12 +22,7 @@
     "type": "git",
     "url": "https://github.com/patrickleet/expand-keys.git"
   },
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "debug": "^3.1.0",
-    "express": "^4.15.5",
-    "healthcheck-middleware": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
