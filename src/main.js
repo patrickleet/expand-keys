@@ -7,7 +7,7 @@ export const setPathValue = (layer, path, value) => {
         layer[pathSection] = value
       }
 
-      layer = layer[pathSection] = layer[pathSection] || {}
+      layer = layer[pathSection] = !isPrototypePolluted(pathSection) && layer[pathSection] || {}
       return layer
     }, layer)
 }
@@ -23,3 +23,5 @@ export const expandKeys = (obj) => {
       return obj
     }, obj)
 }
+
+const isPrototypePolluted = (key) => ['__proto__', 'constructor', 'prototype'].includes(key)
