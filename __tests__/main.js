@@ -2,7 +2,7 @@ import { expandKeys } from 'main'
 
 describe('expandKeys', () => {
   it('expands keys', () => {
-    let expected = {
+    const expected = {
       hello: {
         world: 1,
         galaxy: 2
@@ -18,7 +18,7 @@ describe('expandKeys', () => {
       },
       foo: 'bar'
     }
-    let expanded = expandKeys({
+    const expanded = expandKeys({
       'hello.world': 1,
       'hello.galaxy': 2,
       'three.dots.deep.son': { wow: true },

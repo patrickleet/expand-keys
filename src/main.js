@@ -1,5 +1,5 @@
 export const setPathValue = (layer, path, value) => {
-  let splitPath = path.split('.')
+  const splitPath = path.split('.')
   return splitPath
     .reduce((layer, pathSection, i) => {
       // if last section
@@ -17,7 +17,7 @@ export const expandKeys = (obj) => {
   return Object.keys(obj)
     .filter(key => key.indexOf('.') > -1)
     .reduce(function (obj, key) {
-      var keyValue = obj[key]
+      const keyValue = obj[key]
       setPathValue(obj, key, keyValue)
       delete obj[key]
       return obj
