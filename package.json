@@ -42,7 +42,7 @@
     "eslint-plugin-standard": "4.1.0",
     "husky": "2.7.0",
     "jest": "24.9.0",
-    "regenerator-runtime": "0.13.7",
+    "regenerator-runtime": "0.13.9",
     "semantic-release": "^18.0.0"
   },
   "license": "ISC",
