@@ -23,14 +23,12 @@
     "url": "https://github.com/patrickleet/expand-keys.git"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
+    "@babel/cli": "7.15.7",
+    "@babel/core": "7.15.8",
+    "@babel/preset-env": "7.15.8",
     "babel-eslint": "10.1.0",
     "babel-jest": "27.2.5",
     "babel-plugin-module-resolver": "4.1.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "babel-register": "6.26.0",
     "codecov": "3.8.3",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
@@ -43,7 +41,6 @@
     "husky": "7.0.2",
     "jest": "27.2.5",
     "lint-staged": "^11.2.0",
-    "regenerator-runtime": "0.13.9",
     "semantic-release": "18.0.0"
   },
   "license": "ISC",
@@ -54,5 +51,8 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "@babel/register": "^7.15.3"
   }
 }
