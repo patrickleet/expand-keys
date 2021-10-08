@@ -1,5 +1,5 @@
 # expand-keys
-[![Build Status](https://travis-ci.org/patrickleet/expand-keys.svg?branch=master)](https://travis-ci.org/patrickleet/expand-keys)
+[![Release](https://github.com/patrickleet/expand-keys/actions/workflows/release.yml/badge.svg)](https://github.com/patrickleet/expand-keys/actions/workflows/release.yml)
 [![codecov](https://codecov.io/gh/patrickleet/expand-keys/branch/master/graph/badge.svg)](https://codecov.io/gh/patrickleet/expand-keys)
 
 ```
