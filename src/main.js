@@ -7,7 +7,7 @@ export const setPathValue = (layer, path, value) => {
         layer[pathSection] = value
       }
 
-      layer = layer[pathSection] = !isPrototypePolluted(pathSection) && layer[pathSection] || {}
+      layer = layer[pathSection] = (!isPrototypePolluted(pathSection) && layer[pathSection]) || {}
       return layer
     }, layer)
 }
